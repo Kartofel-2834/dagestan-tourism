@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Туры по всему Дагестану</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/icons/logo.svg" class="logo-icon" />
+      <nav>
+        <div class="link nav-link" name="navLink">О туре</div>
+        <div class="link nav-link" name="navLink">Места</div>
+        <div class="link nav-link" name="navLink">Контакты</div>
+      </nav>
+
+      <div class="main-part">
+        <a href="https://instagram.com/maga.tour" target="_blank">@maga.tour</a>
+        <h1>Туры по всему Дагестану</h1>
+        <p>
+          Во время этого небольшого путешествия мы увидим каньоны и водопады,
+          заброшенные аулы и древние города, мечети и крепости
+        </p>
+        <button id="mainHeaderScrollButton">Вперед</button>
+      </div>
+      <div class="main-image-inner">
+        <div class="image-inner">
+          <img
+            src="assets/img/14.jpg"
+            class="slide-center"
+            name="current-slide"
+          />
+          <img
+            src="assets/img/15.jpg"
+            class="slide-right"
+            name="dropped-slide"
+          />
+        </div>
+        <div class="image-info-inner">
+          <div class="image-timer">
+            <div class="image-timer-progress slider-timer"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h3>
+        Лучшая возможность познакомиться со знаменитым горским гостеприимством,
+        колоритными блюдами национальной кухни и пронзительной красотой горных
+        пейзажей!
+      </h3>
+      <div class="break-line"></div>
+
+      <div class="main-info-inner tour-info">
+        <div class="main-info-text">
+          <p>
+            Республика Дагестан — это уникальная природа, горные водопады,
+            морское побережье и горные реки, равнины и степи. Тур в Дагестан —
+            это увлекательный отдых, полный впечатлений и очарования дикими
+            уголками природы, не тронутыми цивилизацией. Все наши путешествия
+            организованы профессиональными гидами, поэтому подойдут даже для
+            неопытных туристов. Завораживающие природные красоты, старинные
+            сооружения, современный ландшафт — Дагестан оказался на перепутье
+            времён, сохранив старину и не утратив молодости.
+          </p>
+          <br />
+          <p>
+            Маршрут не требует специальной физической подготовки и будет под
+            силу даже детям и новичкам в туризме.
+          </p>
+          <br />
+          <p>
+            Стоимость тура составляется на основе того, какие
+            достопримечательности решите посетить вы!
+          </p>
+
+          <div class="link places-link">Посмотреть места</div>
+        </div>
+        <div class="image-inner">
+          <img src="assets/img/12.png" />
+        </div>
+      </div>
+
+      <div class="break-line"></div>
+
+      <h2>Достопримечательности</h2>
+
+      <div class="places">
+        <img
+          class="scroll-place-arrow"
+          id="prevPlaceRemoteButton"
+          src="assets/icons/arrow.svg"
+        />
+
+        <div class="places-slides">
+          <div class="main-info-inner" id="currentPlace">
+            <div class="main-info-text">
+              <h4></h4>
+              <br />
+              <p></p>
+            </div>
+            <div class="image-inner">
+              <img src="" />
+            </div>
+          </div>
+
+          <div class="main-info-inner slide-right" id="droppedPlace">
+            <div class="main-info-text">
+              <h4></h4>
+              <br />
+              <p></p>
+            </div>
+            <div class="image-inner">
+              <img src="" />
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="scroll-place-arrow"
+          id="nextPlaceRemoteButton"
+          src="assets/icons/arrow.svg"
+        />
+
+        <div class="places-pagination" id="placesPagination"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="phone-number">
+          <p>
+            С вопросами по организации тура обращаться по номеру:
+            <br />
+            +7 (988) 420-24-95
+          </p>
+        </div>
+        <div class="social">
+          <img src="assets/icons/telegram.svg" name="social" />
+          <img src="assets/icons/whatsapp.svg" name="social" />
+          <img src="assets/icons/instagram.svg" name="social" />
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
